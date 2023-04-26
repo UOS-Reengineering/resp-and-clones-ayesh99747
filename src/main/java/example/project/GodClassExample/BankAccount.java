@@ -29,4 +29,16 @@ public class BankAccount {
     public Object getAccountNumber() {
         return accountNumber;
     }
+
+    // TODO: move this method to BankAccount class
+    public double obtainBalance() {
+        return getBalance();
+    }
+
+    // TODO: move this method to BankAccount class
+    public void addInterest() {
+        double interest = getInterest();
+        double value = getBalance() * interest;
+        setBalance(getBalance() + value);
+    }
 }
