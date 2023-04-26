@@ -18,14 +18,11 @@ public class DelegateMethods {
     /**
      * We want to hide the possibility of controlling the minimum value.
      * So, we create a public method that delegates the call to `createRandomValue()` method with only the max param.
-     * TODO: complete the method below using `delegate methods` refactoring technique.
-     * TODO: note that only the max parameter is used.
      *
      * @param max The maximum number (exclusive).
      * @return A random integer ranging from 0 to max.
      */
     public static int createRandomInteger(int max) {
-        // TODO: delegate the call to `createRandomValue()` method.
-        return -1;
+        return createRandomValue(0, max);
     }
 }
