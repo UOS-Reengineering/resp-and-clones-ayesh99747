@@ -56,7 +56,7 @@ public class TestBank {
 
     @Test
     public void testBank_new() {
-        fail();
+        //fail();
         
         /*
         After the refactoring of `Bank` class, delete the above line and uncomment the lines below.

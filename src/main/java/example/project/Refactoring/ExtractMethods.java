@@ -4,7 +4,7 @@ public class ExtractMethods {
 
     /**
      * This is a method to reengineer using `extract methods` refactoring technique.
-     * TODO: complete `foo_after_refactoring()` method below using the refactoring.
+     *
      */
     public static void foo_before_refactoring() {
         // initialise an array of random numbers with the size of 10
@@ -34,19 +34,36 @@ public class ExtractMethods {
     }
 
     public static void foo_after_refactoring() {
-        // TODO: uncomment the following lines and complete missing methods
 
-//        // initialise an array of random numbers with the size of 10
-//        int[] array1 = initialiseArray(10);
-//
-//        // print the array with a given delimiter
-//        printArrayWithDelimiter(array1, " ");
-//
-//        // initialise another array of random numbers with the size of 10
-//        int[] array2 = initialiseArray(10);
-//
-//        // print the array with a given delimiter
-//        printArrayWithDelimiter(array2, " ");
+
+        // initialise an array of random numbers with the size of 10
+        int[] array1 = initialiseArray(10);
+
+        // print the array with a given delimiter
+        printArrayWithDelimiter(array1, " ");
+
+        // initialise another array of random numbers with the size of 10
+        int[] array2 = initialiseArray(10);
+
+        // print the array with a given delimiter
+        printArrayWithDelimiter(array2, " ");
+    }
+
+    private static void printArrayWithDelimiter(int[] array, String delimiter) {
+        // Print out the array values with a delimiter between the numbers.
+        for (int j : array) {
+            System.out.print(j + delimiter);
+        }
+        System.out.println();
+    }
+
+    private static int[] initialiseArray(int i) {
+        // Create a new array with i number of random numbers
+        int[] array = new int[i];
+        for (int j = 0; j < i; j++) {
+            array[j] = (int) (Math.random() * 10);
+        }
+        return array;
     }
 
 
